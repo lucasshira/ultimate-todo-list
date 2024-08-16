@@ -1,0 +1,18 @@
+.content {
+  max-width: 46rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.taskInfoContainer {
+  display: flex;
+  flex: 1;
+
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.taskInfoContainer input, .taskInfoContainer button {
+  transform: translateY(-50%);
+  margin-bottom: 2.3125rem;
+}
