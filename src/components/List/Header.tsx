@@ -1,16 +1,21 @@
 import styles from './Header.module.css';
 
-export function Header() {
+interface HeaderProps {
+  tasksCreated: number;
+  tasksCompleted: number;
+}
+
+export function Header({ tasksCreated = 0, tasksCompleted = 0 }: HeaderProps) {
   return (
     <header className={styles.container}>
       <aside>
         <p>Tarefas criadas</p>
-        <span>0</span>
+        <span>{tasksCreated}</span>
       </aside>
 
       <aside>
         <p>Concluídas</p>
-        <span>0</span>
+        <span>{tasksCompleted}</span>
       </aside>
     </header>
   )
