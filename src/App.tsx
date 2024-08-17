@@ -6,6 +6,7 @@ import { Header as ListHeader } from "./components/List/Header";
 
 import styles from './App.module.css';
 import Button from "./components/Button";
+import Empty from "./components/List/Empty";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
         <div className={styles.tasksList}>
           <ListHeader />
+          <Empty />
         </div>
       </section>
     </main>
